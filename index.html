@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rowan Tamer | Senior Front-End Engineer</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/035472ecb3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+
+    <!-- Ambient Background -->
+    <div class="ambient-shape shape-1"></div>
+    <div class="ambient-shape shape-2"></div>
+    <div class="ambient-shape shape-3"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass">
+        <div class="logo"><span>.</span> Rowan Tamer <span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Journey</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div style="display: flex; gap: 20px; align-items: center;">
+            <button id="theme-toggle" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button>
+            <div class="hamburger"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+    
+    <div class="mobile-menu">
+        <a href="#hero" onclick="closeMenu()">Home</a>
+        <a href="#about" onclick="closeMenu()">About</a>
+        <a href="#skills" onclick="closeMenu()">Skills</a>
+        <a href="#experience" onclick="closeMenu()">Journey</a>
+        <a href="#projects" onclick="closeMenu()">Work</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content reveal">
+            <h3><i class="fas fa-code-branch"></i> &nbsp; Front-End & Mobile Developer</h3>
+            <h1 class="text-gradient">Building Websites <br> & Mobile Apps.</h1>
+            <p>I build accessible, pixel-perfect web experiences and native mobile applications. Specialized in the React ecosystem for web and Flutter for mobile.</p>
+            <div class="cta-group">
+                <a href="#projects" class="btn btn-primary">View Work <i class="fas fa-arrow-right"></i></a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+        
+        <div class="hero-visual reveal delay-200">
+            <div class="code-card">
+                <div class="card-header">
+                    <div class="dot red"></div>
+                    <div class="dot yellow"></div>
+                    <div class="dot green"></div>
+                </div>
+                <code>
+                    <span class="key">const</span> <span class="func">RowanTamer</span> = {<br>
+                    &nbsp;&nbsp;<span class="key">stack</span>: [<span class="str">"Web"</span>, <span class="str">"Mobile"</span>],<br>
+                    &nbsp;&nbsp;<span class="key">web</span>: [<span class="str">"CSS"</span>, <span class="str">"JS"</span>, <span class="str">"Tailwind"</span>],<br>
+                    &nbsp;&nbsp;<span class="key">mobile</span>: [<span class="str">"Flutter"</span>, <span class="str">"Dart"</span>],<br>
+                    &nbsp;&nbsp;<span class="key">passion</span>: <span class="key">true</span>,<br>
+                    &nbsp;&nbsp;<span class="key">coffee</span>: <span class="key">true</span>,<br>
+                    &nbsp;&nbsp;<span class="func">create</span>: <span class="key">function</span>() {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="key">return</span> <span class="str">"Excellence"</span>;<br>
+                    &nbsp;&nbsp;}<br>
+                    };
+                </code>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="about-grid">
+            <div class="about-text reveal">
+                <h2 class="text-gradient">The Story</h2>
+                <p>I am a versatile Front-End and Mobile Developer dedicated to building seamless digital experiences across all platforms. With deep expertise in the React ecosystem for web and Flutter for mobile, I craft applications that are as performant as they are beautiful.</p>
+                <p>My development philosophy centers on Clean Architecture and user-centric design. Whether architecting a complex web dashboard or a native mobile app, I focus on scalable code, smooth animations, and intuitive interfaces.</p>
+                
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <h3>2+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 id="repo-count">10+</h3>
+                        <p>Projects</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>Commitment</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Interactive visual placeholder or decorative element could go here -->
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding">
+        <h2 class="section-title reveal">Superpowers</h2>
+        <p class="subtitle reveal">The tools and technologies I wield to bring ideas to life.</p>
+        
+        <div class="superpowers-grid">
+            <div class="glass-card skill-card reveal delay-100">
+                <i class="fas fa-laptop-code skill-icon"></i>
+                <h3>Web Development</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Tailwind CSS</span>
+                    <span class="skill-tag">Bootstrap</span>
+                </div>
+            </div>
+            
+            <div class="glass-card skill-card reveal delay-200">
+                <i class="fas fa-mobile-alt skill-icon"></i>
+                <h3>Flutter Mobile</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Flutter</span>
+                    <span class="skill-tag">Dart</span>
+                    <span class="skill-tag">Firebase</span>
+                    <span class="skill-tag">Clean Architecture</span>
+                    <span class="skill-tag">State Management</span>
+                </div>
+            </div>
+
+            <div class="glass-card skill-card reveal delay-300">
+                <i class="fas fa-paint-brush skill-icon"></i>
+                <h3>Design & Tools</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Figma</span>
+                    <span class="skill-tag">Git/GitHub</span>
+                    <span class="skill-tag">Responsive</span>
+                    <span class="skill-tag">UI/UX</span>
+                    <span class="skill-tag">VS Code</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="section-padding">
+        <h2 class="section-title reveal">My Journey</h2>
+        <p class="subtitle reveal">A timeline of my professional career and milestones.</p>
+        
+        <div class="timeline">
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card">
+                    <span class="timeline-date">2025 - Present</span>
+                    <h3>Front-End and Cross Platform Trainee</h3>
+                    <h4>ITI - Information Technology Institute</h4>
+                    <p></p>
+                </div>
+            </div>
+            
+            <div class="timeline-item reveal delay-100">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card">
+                    <span class="timeline-date">2025 - present</span>
+                    <h3>Junior Flutter Developer</h3>
+                    <h4>Smart Technology Company</h4>
+                    <p>Collaborated with designers to deliver award-winning mobile applications for international clients. Specialized in complex animations and interactive experiences.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item reveal delay-200">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card">
+                    <span class="timeline-date">2024 - 2025</span>
+                    <h3>Flutter Developer Intern</h3>
+                    <h4>ASDC - All Service Data Control</h4>
+                    <p>Started my career building responsive mobile applications. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <h2 class="section-title reveal">Selected Work</h2>
+        <p class="subtitle reveal">Open source projects fetched directly from GitHub.</p>
+        
+        <h3 class="reveal" style="font-size: 1.8rem; margin-bottom: 30px; border-left: 4px solid var(--primary); padding-left: 15px;">Flutter Mobile Apps</h3>
+        <div id="projects-mobile" class="projects-grid" style="margin-bottom: 60px;">
+            <div class="loader">
+                <div class="spinner"></div>
+                <span>Loading mobile projects...</span>
+            </div>
+        </div>
+
+        <h3 class="reveal" style="font-size: 1.8rem; margin-bottom: 30px; border-left: 4px solid var(--secondary); padding-left: 15px;">Front-End Web</h3>
+        <div id="projects-web" class="projects-grid">
+            <div class="loader">
+                <div class="spinner"></div>
+                <span>Loading web projects...</span>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="https://github.com/RowanTamer23" target="_blank" class="btn btn-secondary">View All on GitHub <i class="fab fa-github"></i></a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <h2 class="section-title reveal">Let's Connect</h2>
+        <p class="subtitle reveal">Have a project in mind or want to say hi? I'd love to hear from you.</p>
+        
+        <div class="glass-card contact-container reveal delay-100">
+            <form onsubmit="event.preventDefault(); alert('Message sent! (Demo only)');">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="john@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Tell me about your project..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
+            
+            <div class="social-links">
+                <a href="https://github.com/RowanTamer23" target="_blank" class="social-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/rowan-tamer-8525381b2/" target="_blank" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:hello@rowantamer.dev" class="social-btn" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <!-- Replace with actual work number -->
+                <a href="tel:+201055950558" class="social-btn" aria-label="Mobile"><i class="fas fa-phone"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Rowan Tamer. Made with love <i class="fa-solid fa-heart"></i></p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
