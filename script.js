@@ -96,10 +96,21 @@ async function fetchProjects() {
         repo.name.toLowerCase().includes("flutter") ||
         repo.name.toLowerCase().includes("dart");
 
+      const isWeb =
+        (repo.topics &&
+          (repo.topics.toLowerCase().includes("web") ||
+            repo.topics.toLowerCase().includes("HTML") ||
+            repo.topics.toLowerCase().includes("CSS") ||
+            repo.topics.toLowerCase().includes("javascript") ||
+            repo.topics.toLowerCase().includes("typescript"))) ||
+        repo.name.toLowerCase().includes("web") ||
+        repo.name.toLowerCase().includes("javascript") ||
+        repo.name.toLowerCase().includes("typescript");
+
       if (isFlutter) {
         projectsMobile.appendChild(card);
         mobileCount++;
-      } else {
+      } else if (isWeb) {
         projectsWeb.appendChild(card);
         webCount++;
       }
