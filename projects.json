@@ -10,6 +10,16 @@
     "type": "web"
   },
   {
+    "name": "Movito App",
+    "description": "Movies app created with react native",
+    "language": "JavaScript",
+    "html_url": "https://github.com/RowanTamer23/Movito-App.git",
+    "homepage": "",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "type": "mobile"
+  },
+  {
     "name": "FoodWagon E-Commerce Website",
     "description": "Food Delivery Website built with HTML, CSS, JavaScript and Bootstrap",
     "language": "JavaScript",
