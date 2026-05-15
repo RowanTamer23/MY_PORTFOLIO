@@ -201,16 +201,16 @@ function openModal(project, hue) {
   modal.classList.add("open");
   document.body.style.overflow = "hidden"; // Prevent scrolling
 
-  const createdDate = new Date(project.created_at).toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
-  const updatedDate = new Date(project.updated_at).toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
+  const updatedDate = project.updated_at
+    ? new Date(project.updated_at).toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    })
+    : "Recently";
+
+  const isMobile = project.type === "mobile";
+  const hasImages = project.images && project.images.length > 0;
 
   modalBody.innerHTML = `
                 <div class="modal-header">
@@ -222,28 +222,51 @@ function openModal(project, hue) {
                     </div>
                 </div>
                 
-                <div style="background: linear-gradient(135deg, hsl(${hue}, 60%, 20%), hsl(${hue + 40}, 60%, 10%)); padding: 40px; border-radius: 12px; margin-bottom: 30px; display: flex; align-items: center; justify-content: center;">
-                     <i class="fas fa-laptop-code" style="font-size: 5rem; color: rgba(255,255,255,0.2);"></i>
-                </div>
+                ${isMobile && hasImages
+      ? `
+                    <div class="expandable-screenshots" id="screenshots-card">
+                        <button class="screenshot-toggle" onclick="toggleScreenshots()">
+                            <h3><i class="fas fa-images"></i> App Screenshots</h3>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </button>
+                        <div class="screenshots-content">
+                            <div class="image-scroller">
+                                ${project.images
+        .map(
+          (img) =>
+            `<img src="${img}" class="scroller-image" alt="${project.name} screenshot">`,
+        )
+        .join("")}
+                            </div>
+                        </div>
+                    </div>
+                `
+      : `
+                    <div style="background: linear-gradient(135deg, hsl(${hue}, 60%, 20%), hsl(${hue + 40}, 60%, 10%)); padding: 40px; border-radius: 12px; margin-bottom: 30px; display: flex; align-items: center; justify-content: center;">
+                         <i class="fas ${isMobile ? "fa-mobile-alt" : "fa-laptop-code"}" style="font-size: 5rem; color: rgba(255,255,255,0.2);"></i>
+                    </div>
+                `
+    }
 
                 <div class="modal-body-text">
                     <p>${project.description || "No description provided for this repository."}</p>
-                    <p style="margin-top: 15px;">This project is open source and available on GitHub. It demonstrates modern development practices and clean code architecture.</p>
+                    <p style="margin-top: 15px;">This project demonstrates modern development practices and clean code architecture.</p>
                 </div>
 
                 <div class="modal-actions">
                     <a href="${project.html_url}" target="_blank" class="btn btn-primary">
                         View Code <i class="fab fa-github"></i>
                     </a>
-                    ${
-                      project.homepage
-                        ? `
+                    ${project.homepage && !isMobile
+      ? `
                         <a href="${project.homepage}" target="_blank" class="btn btn-secondary">
                             Live Demo <i class="fas fa-external-link-alt"></i>
                         </a>
                     `
-                        : ""
-                    }
+      : project.homepage && isMobile ? `<a href="${project.homepage}" target="_blank" class="btn btn-secondary">
+                            Download here <i class="fas fa-external-link-alt"></i>
+                        </a>`
+        : ""}
                 </div>
             `;
 }
@@ -251,6 +274,12 @@ function openModal(project, hue) {
 function closeModalFunc() {
   modal.classList.remove("open");
   document.body.style.overflow = "auto"; // Restore scrolling
+}
+
+// Toggle Screenshots Card
+function toggleScreenshots() {
+  const card = document.getElementById("screenshots-card");
+  card.classList.toggle("active");
 }
 
 closeModal.addEventListener("click", closeModalFunc);
