@@ -7,21 +7,27 @@
     "homepage": "",
     "images": [
       "./assets/images/smart_care/splash.png",
+      
+      "./assets/images/smart_care/doctors.PNG",
+      "./assets/images/smart_care/IMG_7592.PNG",
+      "./assets/images/smart_care/IMG_7590.PNG",
+      "./assets/images/smart_care/IMG_7591.PNG",
+      "./assets/images/smart_care/payment_success.PNG",
       "./assets/images/smart_care/patient_home.PNG",
       "./assets/images/smart_care/notifications.PNG",
+      "./assets/images/smart_care/IMG_7589.PNG",
+      "./assets/images/smart_care/patient_schedule.PNG",
+      "./assets/images/smart_care/patient_profile.PNG",
+      "./assets/images/smart_care/medical_history.PNG",
+
+
       "./assets/images/smart_care/doctor_home.png",
       "./assets/images/smart_care/accept_appointment.png",
       "./assets/images/smart_care/doctor_visit.png",
-      "./assets/images/smart_care/IMG_7589.PNG",
-      "./assets/images/smart_care/doctors.PNG",
-      "./assets/images/smart_care/payment_success.PNG",
-      "./assets/images/smart_care/patient_schedule.PNG",
       "./assets/images/smart_care/doctor_schedule.png",
       "./assets/images/smart_care/choose_time.png",
       "./assets/images/smart_care/patients.png",
       "./assets/images/smart_care/doctor_profile.png",
-      "./assets/images/smart_care/patient_profile.PNG",
-      "./assets/images/smart_care/medical_history.PNG",
       "./assets/images/smart_care/ai_chat.png"
     ],
 
