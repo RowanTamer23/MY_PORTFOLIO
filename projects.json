@@ -1,5 +1,35 @@
 [
   {
+    "name": "Smart Care App",
+    "description": "ITI Graduation Project, Application made for hospitals and clinics for managing appointments and patient data",
+    "language": "Dart",
+    "html_url": "https://github.com/RowanTamer23/smart_care.git",
+    "homepage": "",
+    "images": [
+      "./assets/images/smart_care/splash.png",
+      "./assets/images/smart_care/patient_home.png",
+      "./assets/images/smart_care/notifications.png",
+      "./assets/images/smart_care/doctor-home.png",
+      "./assets/images/smart_care/accept_appointment.png",
+      "./assets/images/smart_care/doctor_visit.png",
+      "./assets/images/smart_care/join_call.png",
+      "./assets/images/smart_care/doctors.png",
+      "./assets/images/smart_care/payment_success.png",
+      "./assets/images/smart_care/pateint_schedule.png",
+      "./assets/images/smart_care/doctor_schedule.png",
+      "./assets/images/smart_care/choose_time.png",
+      "./assets/images/smart_care/patients.png",
+      "./assets/images/smart_care/doctor_profile.png",
+      "./assets/images/smart_care/patient_profile.png",
+      "./assets/images/smart_care/medical_history.png",
+      "./assets/images/smart_care/ai_chat.png"
+    ],
+
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "type": "mobile"
+  },
+  {
     "name": "Sameh Salah App",
     "description": "Education App Built for Mr/Sameh Salah and his students",
     "language": "Dart",
