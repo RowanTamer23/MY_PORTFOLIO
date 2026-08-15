@@ -3,15 +3,14 @@
     "name": "Hamada Morad App",
     "description": "Education App Built for Mr/Hamada Morad and his students",
     "language": "Dart",
-    "html_url": "https://github.com/RowanTamer23/sameh-salah-app.git",
+    "html_url": "https://github.com/RowanTamer23/HamadaMorad.git",
     "homepage": "https://apps.apple.com/eg/app/hamada-morad/id6788937674",
     "images": [
-      "./assets/images/hamada_morad/splash.png",
-      "./assets/images/hamada_morad/onboarding.png",
-      "./assets/images/hamada_morad/home.png",
-      "./assets/images/hamada_morad/courses.png",
-      "./assets/images/hamada_morad/notifications.png"
-      
+      "./assets/images/Hamada_morad/splash.png",
+      "./assets/images/Hamada_morad/onboarding.png",
+      "./assets/images/Hamada_morad/home.png",
+      "./assets/images/Hamada_morad/courses.png",
+      "./assets/images/Hamada_morad/notifications.png"
     ],
 
     "stargazers_count": 0,
