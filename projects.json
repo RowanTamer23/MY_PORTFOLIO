@@ -6,14 +6,14 @@
     "html_url": "https://github.com/RowanTamer23/RaeedElGayar.git",
     "homepage": "https://apps.apple.com/eg/app/rg-courses/id6802466557",
     "images": [
-      "./assets/images/RG_courses/splash.png",
-      "./assets/images/RG_courses/onboarding.png",
-      "./assets/images/RG_courses/onboarding2.png",
-      "./assets/images/RG_courses/home.png",
-      "./assets/images/RG_courses/courses.png",
-      "./assets/images/RG_courses/lectures.png",
-      "./assets/images/RG_courses/videos.png",
-      "./assets/images/RG_courses/exams.png"
+      "./assets/images/RG_courses/splash.webp",
+      "./assets/images/RG_courses/onboarding.webp",
+      "./assets/images/RG_courses/onboarding2.webp",
+      "./assets/images/RG_courses/home.webp",
+      "./assets/images/RG_courses/courses.webp",
+      "./assets/images/RG_courses/lectures.webp",
+      "./assets/images/RG_courses/videos.webp",
+      "./assets/images/RG_courses/exams.webp"
     ],
 
     "stargazers_count": 0,
