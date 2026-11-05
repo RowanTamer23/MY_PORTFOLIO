@@ -1,5 +1,26 @@
 [
   {
+    "name": "RG Courses App",
+    "description": "Education App Built for Mr/Raeed El Gayar and his students",
+    "language": "Dart",
+    "html_url": "https://github.com/RowanTamer23/RaeedElGayar.git",
+    "homepage": "https://apps.apple.com/eg/app/rg-courses/id6802466557",
+    "images": [
+      "./assets/images/RG_courses/splash.png",
+      "./assets/images/RG_courses/onboarding.png",
+      "./assets/images/RG_courses/onboarding2.png",
+      "./assets/images/RG_courses/home.png",
+      "./assets/images/RG_courses/courses.png",
+      "./assets/images/RG_courses/lectures.png",
+      "./assets/images/RG_courses/videos.png",
+      "./assets/images/RG_courses/exams.png"
+    ],
+
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "type": "mobile"
+  },
+  {
     "name": "Hamada Morad App",
     "description": "Education App Built for Mr/Hamada Morad and his students",
     "language": "Dart",
